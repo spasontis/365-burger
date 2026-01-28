@@ -28,10 +28,7 @@ export const Card = ({
 
       <div className="flex items-end justify-between font-bold mt-4">
         <h1 className="text-2xl leading-none">{title}</h1>
-        <p className="text-xl leading-none">
-          {price}
-          {".-"}
-        </p>
+        <p className="text-xl leading-none">{price}</p>
       </div>
 
       {description && <p className="text-gray-500 mt-2">{description}</p>}
