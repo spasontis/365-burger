@@ -4,23 +4,23 @@ export const WorkTimeSection = () => {
   return (
     <section
       id="work-time"
-      className="flex flex-col items-center justify-center p-4 lg:p-12 pb-32 min-h-[80vh] mt-6"
+      className="flex flex-col items-center justify-center p-4 lg:p-12 pb-32 min-h-[80vh] mt-24"
     >
-      <div className="max-w-6xl w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+      <div className="max-w-7xl w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         {/* Image Section */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-[55%] relative">
           <Image
             src="/cooking-beef.jpg"
             alt="Cooking Beef"
-            width={1000}
-            height={1000}
-            className="w-full h-auto"
+            width={1200}
+            height={1200}
+            className="w-full h-auto shadow-2xl border border-white/5"
           />
         </div>
 
         {/* Hours Section */}
-        <div className="w-full lg:w-1/2 flex flex-col">
-          <div className="border border-white/20 bg-transparent p-8 md:p-12 relative overflow-hidden flex flex-col items-center">
+        <div className="w-full lg:w-[45%] flex flex-col">
+          <div className="border border-white/20 bg-black/40 backdrop-blur-sm p-8 md:p-12 relative overflow-hidden flex flex-col items-center">
             <h2 className="text-center lg:text-left text-3xl md:text-4xl font-black mb-12 tracking-tighter text-white uppercase text-balance leading-tight">
               Opening Hours
             </h2>
@@ -60,7 +60,7 @@ export const WorkTimeSection = () => {
           </div>
         </div>
       </div>
-      <div className="h-px w-[80%] bg-white/20 mt-22"></div>
+      <div className="h-px w-[80%] bg-white/20 mt-28"></div>
     </section>
   );
 };

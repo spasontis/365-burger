@@ -19,7 +19,7 @@ export default function Home() {
         <HomeSection />
         <Marquee />
         <WorkTimeSection />
-        <h1 className="text-center text-8xl/12 font-bold mb-8">MENU</h1>
+        <h1 className="text-center text-8xl/12 font-bold mt-24 mb-8">MENU</h1>
         <SmashBurgersSection />
         <BreakfastSection />
         <StartersSection />
