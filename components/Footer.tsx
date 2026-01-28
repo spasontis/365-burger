@@ -1,4 +1,4 @@
-import { Facebook, Mail, Phone } from "lucide-react";
+import { Facebook, Mail, MessageCircle, Phone } from "lucide-react";
 import Image from "next/image";
 
 export const Footer = () => {
@@ -20,11 +20,12 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-4 text-sm">
+        <div className="flex flex-col gap-2 text-sm max-[800px]:items-center">
           <h3 className="text-lg font-bold uppercase tracking-wider text-white">
             Contacts
           </h3>
-          <div className="flex flex-col gap-2 text-gray-400">
+
+          <div className="flex flex-col gap-2 text-gray-400 max-[800px]:items-center">
             <a
               href="mailto:info@365smashburger.com"
               className="hover:text-white transition-colors flex items-center gap-2"
@@ -38,6 +39,15 @@ export const Footer = () => {
             >
               <Phone size={16} />
               +44 7435 271877
+            </a>
+            <a
+              href="https://wa.me/447838299006"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors flex items-center gap-2"
+            >
+              <MessageCircle width={16} height={16} />
+              +44 7838 299006
             </a>
             <a
               href="https://www.facebook.com/365BurgerBar/"

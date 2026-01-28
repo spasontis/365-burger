@@ -9,14 +9,17 @@ import { SpecialBurgersSection } from "@/components/sections/products/SpecialBur
 import { SidesSection } from "@/components/sections/products/SidesSection";
 import { SmashBurgersSection } from "@/components/sections/products/SmashBurgersSection";
 import { BreakfastSection } from "@/components/sections/products/BreakfastSection";
+import { WorkTimeSection } from "@/components/sections/WorkTimeSection";
 
 export default function Home() {
   return (
     <div className="bg-black">
       <Header />
-      <HomeSection />
-      <Marquee />
       <main>
+        <HomeSection />
+        <Marquee />
+        <WorkTimeSection />
+        <h1 className="text-center text-8xl/12 font-bold mb-8">MENU</h1>
         <SmashBurgersSection />
         <BreakfastSection />
         <StartersSection />
