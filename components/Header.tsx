@@ -56,46 +56,40 @@ export const Header = () => {
       >
         <div className="flex flex-col h-full gap-8 text-white mt-16">
           <button
+            onClick={() => scrollToSection("breakfast")}
+            className="text-2xl font-bold hover:text-gray-500 transition-colors"
+          >
+            BREAKFAST
+          </button>
+          <button
+            onClick={() => scrollToSection("starters")}
+            className="text-2xl font-bold hover:text-gray-500 transition-colors"
+          >
+            STARTERS
+          </button>
+          <button
+            onClick={() => scrollToSection("special-burgers")}
+            className="text-2xl font-bold hover:text-gray-500 transition-colors"
+          >
+            SPECIAL BURGERS
+          </button>
+          <button
             onClick={() => scrollToSection("smash-burgers")}
-            className="text-2xl font-bold hover:text-red-500 transition-colors"
+            className="text-2xl font-bold hover:text-gray-500 transition-colors"
           >
-            Smash Burgers
-          </button>
-          <button
-            onClick={() => scrollToSection("ciabatta-burgers")}
-            className="text-2xl font-bold hover:text-red-500 transition-colors"
-          >
-            Ciabatta Burgers
-          </button>
-          <button
-            onClick={() => scrollToSection("sausages")}
-            className="text-2xl font-bold hover:text-red-500 transition-colors"
-          >
-            Sausages
-          </button>
-          <button
-            onClick={() => scrollToSection("signature-fries")}
-            className="text-2xl font-bold hover:text-red-500 transition-colors"
-          >
-            Signature Fries
+            SMASH BURGERS
           </button>
           <button
             onClick={() => scrollToSection("sides")}
-            className="text-2xl font-bold hover:text-red-500 transition-colors"
+            className="text-2xl font-bold hover:text-gray-500 transition-colors"
           >
-            Sides
+            SIDES
           </button>
           <button
-            onClick={() => scrollToSection("extras")}
-            className="text-2xl font-bold hover:text-red-500 transition-colors"
+            onClick={() => scrollToSection("desserts")}
+            className="text-2xl font-bold hover:text-gray-500 transition-colors"
           >
-            Extras
-          </button>
-          <button
-            onClick={() => scrollToSection("drinks")}
-            className="text-2xl font-bold hover:text-red-500 transition-colors"
-          >
-            Drinks
+            DESERTS BY NAMIEE
           </button>
         </div>
       </div>
