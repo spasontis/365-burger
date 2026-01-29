@@ -20,7 +20,7 @@ export const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-2 text-sm max-[800px]:items-center">
+        <div className="flex flex-col gap-2 text-sm max-[800px]:items-center mt-6lg:mt-12">
           <h3 className="text-lg font-bold uppercase tracking-wider text-white">
             Contacts
           </h3>

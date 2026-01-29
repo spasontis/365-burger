@@ -26,10 +26,11 @@ export const Header = () => {
           onClick={() => scrollToSection("home")}
         >
           <Image
-            src="/365-burger-logo.png"
+            src="/365-logo.webp"
             alt="365 Burger Logo"
             width={220}
             height={220}
+            sizes="46px"
             className="h-10 w-auto"
           />
         </button>

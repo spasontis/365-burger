@@ -10,11 +10,11 @@ export const HomeSection = () => {
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center p-4 gap-14">
         <div className="flex flex-col items-center gap-4">
           <Image
-            src="/365-burger-label.png"
+            src="/365-burger-label.webp"
             alt="365 Burger Label"
             width={400}
             height={400}
-            className="object-contain"
+            sizes="(max-width: 768px) 90vw, 380px"
           />
         </div>
         <div className="flex flex-col items-center justify-center gap-2 text-center">

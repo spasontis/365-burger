@@ -1,8 +1,8 @@
 import { Card } from "@/components/Card";
 import { ProductsSectionBase } from "@/components/ProductsSectionBase";
-import signatureBurger from "@/assets/burger-1.jpg";
-import chickenBurger from "@/assets/burger-2.jpg";
-import comboBurger from "@/assets/burger-3.jpg";
+import signatureBurger from "@/assets/burger-1.webp";
+import chickenBurger from "@/assets/burger-2.webp";
+import comboBurger from "@/assets/burger-3.webp";
 
 const smashBurgers = [
   {

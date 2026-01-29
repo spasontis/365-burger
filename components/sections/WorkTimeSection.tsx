@@ -10,11 +10,12 @@ export const WorkTimeSection = () => {
         {/* Image Section */}
         <div className="w-full lg:w-[55%] relative">
           <Image
-            src="/cooking-beef.jpg"
+            src="/cooking-beef.webp"
             alt="Cooking Beef"
             width={1200}
             height={1200}
             className="w-full h-auto shadow-2xl border border-white/5"
+            sizes="(max-width: 768px) 100vw, 380px"
           />
         </div>
 
@@ -25,29 +26,30 @@ export const WorkTimeSection = () => {
               Opening Hours
             </h2>
 
-            <div className="space-y-4 relative z-10">
+            <div className=" relative z-10">
               {[
-                { day: "Monday", time: "08:30 – 22:00" },
-                { day: "Tuesday", time: "08:30 – 22:00" },
-                { day: "Wednesday", time: "08:30 – 22:00" },
-                { day: "Thursday", time: "08:30 – 22:00" },
-                { day: "Friday", time: "08:30 – 22:00" },
-                { day: "Saturday", time: "08:30 – 22:00" },
-                { day: "Sunday", time: "08:30 – 21:00" },
+                { day: "Monday", time: ["08:30", "22:00"] },
+                { day: "Tuesday", time: ["08:30", "22:00"] },
+                { day: "Wednesday", time: ["08:30", "22:00"] },
+                { day: "Thursday", time: ["08:30", "22:00"] },
+                { day: "Friday", time: ["08:30", "22:00"] },
+                { day: "Saturday", time: ["08:30", "22:00"] },
+                { day: "Sunday", time: ["08:30", "21:00"] },
               ].map((item) => (
                 <div
                   key={item.day}
-                  className="flex justify-between items-center py-4 border-b border-white/10 last:border-0 px-2"
+                  className="flex items-center py-4 border-b border-white/10 last:border-0 px-2 gap-4"
                 >
-                  <span className="text-lg md:text-xl font-bold text-white tracking-[0.2em] uppercase">
+                  <span className="text-md md:text-xl font-bold text-white tracking-[0.2em] uppercase whitespace-nowrap">
                     {item.day}
                   </span>
-                  <div className="flex items-center gap-6">
-                    <div className="h-[2px] w-8 bg-white/20" />
-                    <span className="text-xl md:text-2xl font-black text-white tabular-nums">
-                      {item.time}
-                    </span>
-                  </div>
+
+                  <div className="grow h-[2px] bg-white/20" />
+                  <span className="flex text-end text-md md:text-xl font-black text-white tabular-nums whitespace-nowrap">
+                    {item.time[0]}
+                    <span className="md:inline mx-2">–</span>
+                    {item.time[1]}
+                  </span>
                 </div>
               ))}
             </div>

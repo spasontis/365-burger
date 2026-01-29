@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import noImage from "@/assets/no-image.png";
+import noImage from "@/assets/no-image.webp";
 
 export const Card = ({
   image,
