@@ -34,7 +34,7 @@ export const HomeSection = () => {
 
           <div className="flex items-center gap-6 mt-2">
             <a
-              href="https://maps.app.goo.gl/r4wL2ePwpdNizFht8"
+              href="https://maps.app.goo.gl/rekpnLskHUmhnCYS7"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:scale-110 transition-transform duration-200 min-[800px]:hidden"
