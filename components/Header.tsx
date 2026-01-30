@@ -1,5 +1,5 @@
 "use client";
-import { Utensils } from "lucide-react";
+import { Utensils, X } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -55,6 +55,12 @@ export const Header = () => {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
+        <button
+          onClick={() => setIsMenuOpen(false)}
+          className="p-3 text-2xl font-bold hover:text-gray-500 transition-colors"
+        >
+          <X width={32} height={32} />
+        </button>
         <div className="flex flex-col h-full gap-8 text-white mt-16">
           <button
             onClick={() => scrollToSection("breakfast")}

@@ -21,7 +21,7 @@ export const HomeSection = () => {
           <h2 className="text-xl md:text-2xl font-semibold max-[800px]:hidden">
             Where can you find us?
           </h2>
-          <div className="w-196 max-w-2xl h-116 overflow-hidden shadow-lg border-2 max-[800px]:hidden">
+          <div className="md:w-xl xl:w-2xl h-116 overflow-hidden shadow-lg border-2 max-[800px]:hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d-1.1515341!3d51.8973982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876e796f978b4dd%3A0xf6e3e310fce3e013!2s365%20Burger%20Bar!5e0!3m2!1sen!2suk!4v0"
               width="100%"
